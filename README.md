@@ -54,26 +54,23 @@
 
 ### 方式一：对话安装（推荐）
 
-在任意支持的工具对话中直接说：
+在对话中直接说：
 
 ```
 安装 qiaopi skill: https://github.com/AIWhatYouNeed/qiaopi
 ```
 
-AI 会自动完成：
+**Claude Code** 原生支持此指令，会自动完成 Clone → 安装 → 确认。
 
-1. Clone 仓库到临时目录
-2. 识别当前平台（Lingma / Claude / Codex）
-3. 复制对应文件到正确位置
-4. 确认安装完成
+**Lingma Agent** 与 **OpenAI Codex** 可在对话中请求 AI 协助安装，AI 会帮你执行对应的复制命令。
 
-不同平台的对话触发示例：
+不同平台的安装方式：
 
-| 平台                   | 对话指令                                                        |
-| ---------------------- | --------------------------------------------------------------- |
-| **Lingma Agent** | `/安装 qiaopi skill: https://github.com/AIWhatYouNeed/qiaopi` |
-| **Claude Code**  | `安装 qiaopi skill: https://github.com/AIWhatYouNeed/qiaopi`  |
-| **OpenAI Codex** | `安装 qiaopi skill: https://github.com/AIWhatYouNeed/qiaopi`  |
+| 平台 | 方式 |
+|------|------|
+| **Claude Code** | 对话安装：`安装 qiaopi skill: https://github.com/AIWhatYouNeed/qiaopi` |
+| **Lingma Agent** | 对话请求："帮我安装 qiaopi skill"（AI 会复制 `.lingma/skills/qiaopi/` 到项目） |
+| **OpenAI Codex** | 对话请求："帮我安装 qiaopi skill"（AI 会复制 `codex/instructions.md` 到 `.codex/`） |
 
 ### 方式二：手动安装
 
