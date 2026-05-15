@@ -52,39 +52,50 @@
 
 ## 安装
 
-### 方式一：Lingma Agent（推荐）
+### 方式一：对话安装（推荐）
 
-1. 将 `.lingma` 目录复制到你的项目根目录：
-   ```bash
-   git clone https://github.com/your-username/letters-to-ama.git
-   cd letters-to-ama
-   cp -r .lingma /path/to/your/project/
-   ```
+在任意支持的工具对话中直接说：
 
-2. 重启 Lingma Agent，通过 `/letters-to-ama` 触发使用。
+```
+安装 letters-to-ama skill: https://github.com/your-username/letters-to-ama
+```
 
-### 方式二：Claude Code
+AI 会自动完成：
+1. Clone 仓库到临时目录
+2. 识别当前平台（Lingma / Claude / Codex）
+3. 复制对应文件到正确位置
+4. 确认安装完成
 
-1. 将本仓库 Clone 到 Claude Code Skill 目录：
-   ```bash
-   cd ~/.claude-code/skills/
-   git clone https://github.com/your-username/letters-to-ama.git
-   ```
+不同平台的对话触发示例：
 
-2. 或在对话中直接要求安装：
-   ```
-   安装 letters-to-ama skill: https://github.com/your-username/letters-to-ama
-   ```
+| 平台 | 对话指令 |
+|------|---------|
+| **Lingma Agent** | `/安装 letters-to-ama skill: https://github.com/your-username/letters-to-ama` |
+| **Claude Code** | `安装 letters-to-ama skill: https://github.com/your-username/letters-to-ama` |
+| **OpenAI Codex** | `安装 letters-to-ama skill: https://github.com/your-username/letters-to-ama` |
 
-### 方式三：OpenAI Codex
+### 方式二：手动安装
 
-1. 将 `codex/instructions.md` 复制到你的项目 `.codex` 目录：
-   ```bash
-   mkdir -p /path/to/your/project/.codex
-   cp codex/instructions.md /path/to/your/project/.codex/instructions.md
-   ```
+如果对话安装失败，可手动执行：
 
-2. Codex CLI 会自动加载该指令文件。
+**Lingma Agent：**
+```bash
+git clone https://github.com/your-username/letters-to-ama.git /tmp/letters-to-ama
+cp -r /tmp/letters-to-ama/.lingma /path/to/your/project/
+```
+
+**Claude Code：**
+```bash
+cd ~/.claude-code/skills/
+git clone https://github.com/your-username/letters-to-ama.git
+```
+
+**OpenAI Codex：**
+```bash
+git clone https://github.com/your-username/letters-to-ama.git /tmp/letters-to-ama
+mkdir -p /path/to/your/project/.codex
+cp /tmp/letters-to-ama/codex/instructions.md /path/to/your/project/.codex/
+```
 
 ---
 
