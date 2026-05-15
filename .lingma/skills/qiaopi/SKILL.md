@@ -1,5 +1,5 @@
 ---
-name: letters-to-ama
+name: qiaopi
 description: Converts casual spoken Chinese (大白话) into authentic qiaopi (侨批 / 银信 / 批信) format. Use when the user wants to write qiaopi, convert modern text to overseas Chinese remittance-letter format, generate traditional remittance letters, or mentions 侨批, 银信, 批信, 番批, 唐山批, or writing letters in qiaopi style.
 ---
 

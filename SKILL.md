@@ -1,4 +1,4 @@
-# letters-to-ama
+# qiaopi
 
 ## 用途
 
@@ -9,7 +9,7 @@
 当用户请求包含以下关键词时触发：
 - 写侨批、侨批格式、银信、批信、番批、唐山批
 - 转换大白话为书信、生成传统家书
-- letters-to-ama、给阿嬷的情书
+- qiaopi、给阿嬷的情书
 
 ## 执行流程
 
@@ -224,4 +224,4 @@
 
 ## 参考
 
-更多范例与电影原文参考见 `.lingma/skills/letters-to-ama/examples.md`。
+更多范例与电影原文参考见 `.lingma/skills/qiaopi/examples.md`。
