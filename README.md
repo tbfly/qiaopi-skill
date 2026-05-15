@@ -1,4 +1,4 @@
-# 给阿嬷的情书 — 侨批生成器 (Letters to Ama)
+# 给阿嬷的情书 (Dear You) — 侨批生成器
 
 大白话 → 正宗侨批（银信 / 批信）格式转换器。一个受电影《给阿嬷的情书》深度启发的多平台 AI Skill，将日常口语化内容转换为承载百年华侨情感的传统书信。
 
@@ -69,8 +69,8 @@ AI 会自动完成：
 
 不同平台的对话触发示例：
 
-| 平台                   | 对话指令                                                                        |
-| ---------------------- | ------------------------------------------------------------------------------- |
+| 平台                   | 对话指令                                                        |
+| ---------------------- | --------------------------------------------------------------- |
 | **Lingma Agent** | `/安装 qiaopi skill: https://github.com/your-username/qiaopi` |
 | **Claude Code**  | `安装 qiaopi skill: https://github.com/your-username/qiaopi`  |
 | **OpenAI Codex** | `安装 qiaopi skill: https://github.com/your-username/qiaopi`  |
@@ -146,12 +146,12 @@ qiaopi/
 
 ## 文件说明
 
-| 文件                                          | 适用平台     | 说明                                               |
-| --------------------------------------------- | ------------ | -------------------------------------------------- |
-| `SKILL.md`                                  | Claude Code  | Skill 定义文件，包含触发条件、执行流程与参数说明   |
+| 文件                                  | 适用平台     | 说明                                               |
+| ------------------------------------- | ------------ | -------------------------------------------------- |
+| `SKILL.md`                          | Claude Code  | Skill 定义文件，包含触发条件、执行流程与参数说明   |
 | `.lingma/skills/qiaopi/SKILL.md`    | Lingma Agent | Skill 主文件，含完整书写规范、七段式结构、风格指南 |
 | `.lingma/skills/qiaopi/examples.md` | 全平台参考   | 7 个完整示例 +《给阿嬷的情书》侨批原文参考汇编     |
-| `codex/instructions.md`                     | OpenAI Codex | 指令文件，放入 `.codex/` 目录即可生效            |
+| `codex/instructions.md`             | OpenAI Codex | 指令文件，放入 `.codex/` 目录即可生效            |
 
 ---
 
